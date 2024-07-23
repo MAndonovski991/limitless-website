@@ -1,17 +1,20 @@
-import { useTranslation } from "../../../utils/translationProvider";
-import Content from "./content";
+import { useTranslation } from '../../../utils/translationProvider';
+import Content from './content';
 
-export async function generateMetadata({ params }: { params: { locale: string } }) {
-	const t = useTranslation(params && (params.locale as string));
-	return {
-		title: t("pages.recruitment.meta.title"),
-		description: t("pages.recruitment.meta.description"),
-	};
+export async function generateMetadata({
+  params,
+}: {
+  params: { locale: string };
+}) {
+  const t = useTranslation(params && (params.locale as string));
+  return {
+    title: t('pages.recruitment.meta.title'),
+    description: t('pages.recruitment.meta.description'),
+  };
 }
 
 const Page = async () => {
-	return <Content />;
+  return <Content />;
 };
 
 export default Page;
-

@@ -13,28 +13,27 @@ interface ModalProps {
 }
 
 const UserModal = ({ open, close, id }: ModalProps) => {
-
   const [form] = useForm();
-  
+
   useEffect(() => {
-    if(open && id) {
+    if (open && id) {
       fetch(`/api/user/${id}`, {
-        method: "GET",
+        method: 'GET',
       })
-        .then((res) => res.json())
-        .then((datta) => {
-          form.setFieldsValue(datta)
-        })
+        .then(res => res.json())
+        .then(datta => {
+          form.setFieldsValue(datta);
+        });
     }
-  }, [])
-  
+  }, []);
+
   const handleOk = async () => {
     form.validateFields().then(async () => {
       const formData = form.getFieldsValue();
       try {
         await fetch(`/api/user`, {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(formData),
         });
         form.resetFields();
@@ -42,7 +41,7 @@ const UserModal = ({ open, close, id }: ModalProps) => {
       } catch (error) {
         console.error(error);
       }
-    })
+    });
   };
 
   const handleUpdate = async () => {
@@ -50,8 +49,8 @@ const UserModal = ({ open, close, id }: ModalProps) => {
       const formData = form.getFieldsValue();
       try {
         await fetch(`/api/user/${id}`, {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(formData),
         });
         form.resetFields();
@@ -59,11 +58,17 @@ const UserModal = ({ open, close, id }: ModalProps) => {
       } catch (error) {
         console.error(error);
       }
-    })
+    });
   };
 
   return (
-    <Modal title="User" open={open} footer={null} onCancel={() => close()} forceRender >
+    <Modal
+      title="User"
+      open={open}
+      footer={null}
+      onCancel={() => close()}
+      forceRender
+    >
       <Form
         form={form}
         layout="vertical"
@@ -73,7 +78,7 @@ const UserModal = ({ open, close, id }: ModalProps) => {
       >
         <Form.Item
           label="Fullname"
-          name='name'
+          name="name"
           rules={[{ required: true, message: 'Please input full name!' }]}
         >
           <Input />
@@ -82,25 +87,35 @@ const UserModal = ({ open, close, id }: ModalProps) => {
         <Form.Item
           label="Email"
           name="email"
-          rules={[{ required: true, type: "email", message: 'Please input valid email!' }]}
+          rules={[
+            {
+              required: true,
+              type: 'email',
+              message: 'Please input valid email!',
+            },
+          ]}
         >
           <Input />
         </Form.Item>
-      
-        <Form.Item name="active" valuePropName="checked" >
+
+        <Form.Item name="active" valuePropName="checked">
           <Checkbox>Active</Checkbox>
         </Form.Item>
 
         <Form.Item className="flex justify-end">
-          {!id && <Button type="primary" onClick={() => handleOk()}>
-            Submit
-          </Button>}
-          {id && <Button type="primary" onClick={() => handleUpdate()}>
-            Update
-          </Button>}
+          {!id && (
+            <Button type="primary" onClick={() => handleOk()}>
+              Submit
+            </Button>
+          )}
+          {id && (
+            <Button type="primary" onClick={() => handleUpdate()}>
+              Update
+            </Button>
+          )}
         </Form.Item>
       </Form>
-      </Modal>
+    </Modal>
   );
 };
 

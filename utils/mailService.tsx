@@ -1,14 +1,19 @@
 const nodemailer = require('nodemailer');
 
-export async function sendMail(subject: string, toEmail: string, otpText: string, attachment?: any) {
+export async function sendMail(
+  subject: string,
+  toEmail: string,
+  otpText: string,
+  attachment?: any
+) {
   const transporter = nodemailer.createTransport({
-      host: process.env.NODEMAILER_HOST,
-      port: process.env.NODEMAILER_PORT,
-      secure: true, // true for 465, false for other ports
-      auth: {
-        user: process.env.NODEMAILER_EMAIL,
-        pass: process.env.NODEMAILER_PW
-      },
+    host: process.env.NODEMAILER_HOST,
+    port: process.env.NODEMAILER_PORT,
+    secure: true, // true for 465, false for other ports
+    auth: {
+      user: process.env.NODEMAILER_EMAIL,
+      pass: process.env.NODEMAILER_PW,
+    },
   });
 
   const mailOptions = {
@@ -16,7 +21,7 @@ export async function sendMail(subject: string, toEmail: string, otpText: string
     to: toEmail,
     subject: subject,
     text: otpText,
-    attachments: attachment ? [attachment] : null
+    attachments: attachment ? [attachment] : null,
   };
 
   await new Promise((resolve, reject) => {

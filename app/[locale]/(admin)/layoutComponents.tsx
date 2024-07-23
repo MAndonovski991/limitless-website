@@ -1,15 +1,13 @@
 'use client';
 
 import React from 'react';
-import {
-  LogoutButton,
-} from "../../../components/buttons.component";
+import { LogoutButton } from '../../../components/buttons.component';
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 
-import { MaterialSymbol } from "react-material-symbols";
+import { MaterialSymbol } from 'react-material-symbols';
 import { Layout as AntLayout, Menu } from 'antd';
-import { useSession } from "next-auth/react";
+import { useSession } from 'next-auth/react';
 import logoWhite from '../../../assets/images/logo-side-white.png';
 const { Header, Sider, Content, Footer } = AntLayout;
 
@@ -23,16 +21,13 @@ const LayoutComponents = ({
   const router = useRouter();
   const session = useSession();
   return (
-    <AntLayout >
-      <Sider
-        breakpoint="lg"
-        collapsedWidth="0"
-      >
+    <AntLayout>
+      <Sider breakpoint="lg" collapsedWidth="0">
         <Image
-              src={logoWhite}
-              className="max-h-full px-8 py-6 transition-all duration-300 ease-in-out mb-12"
-              alt="Limitless Logo"
-            />
+          src={logoWhite}
+          className="max-h-full px-8 py-6 transition-all duration-300 ease-in-out mb-12"
+          alt="Limitless Logo"
+        />
         <Menu
           theme="dark"
           mode="inline"
@@ -59,12 +54,20 @@ const LayoutComponents = ({
           ]}
         />
       </Sider>
-      <AntLayout style={{ minHeight: "80vh" }}>
-        <Header style={{ padding: 0, display: 'flex', alignItems: 'center', justifyContent: 'end' }} className=" bg-slate-100 gap-4">
+      <AntLayout style={{ minHeight: '80vh' }}>
+        <Header
+          style={{
+            padding: 0,
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'end',
+          }}
+          className=" bg-slate-100 gap-4"
+        >
           Welcome, {session?.data?.user?.name}
-          <LogoutButton/>
+          <LogoutButton />
         </Header>
-        <Content >
+        <Content>
           <div
             style={{
               padding: 24,

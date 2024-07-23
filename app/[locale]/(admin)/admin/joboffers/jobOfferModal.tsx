@@ -13,28 +13,27 @@ interface ModalProps {
 }
 
 const JobOfferModal = ({ open, close, id }: ModalProps) => {
-
   const [form] = useForm();
-  
+
   useEffect(() => {
-    if(open && id) {
+    if (open && id) {
       fetch(`/api/joboffer/${id}`, {
-        method: "GET",
+        method: 'GET',
       })
-        .then((res) => res.json())
-        .then((datta) => {
-          form.setFieldsValue(datta)
-        })
+        .then(res => res.json())
+        .then(datta => {
+          form.setFieldsValue(datta);
+        });
     }
-  }, [])
-  
+  }, []);
+
   const handleOk = async () => {
     form.validateFields().then(async () => {
       const formData = form.getFieldsValue();
       try {
         await fetch(`/api/joboffer`, {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(formData),
         });
         form.resetFields();
@@ -42,7 +41,7 @@ const JobOfferModal = ({ open, close, id }: ModalProps) => {
       } catch (error) {
         console.error(error);
       }
-    })
+    });
   };
 
   const handleUpdate = async () => {
@@ -50,8 +49,8 @@ const JobOfferModal = ({ open, close, id }: ModalProps) => {
       const formData = form.getFieldsValue();
       try {
         await fetch(`/api/joboffer/${id}`, {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(formData),
         });
         form.resetFields();
@@ -59,11 +58,17 @@ const JobOfferModal = ({ open, close, id }: ModalProps) => {
       } catch (error) {
         console.error(error);
       }
-    })
+    });
   };
 
   return (
-    <Modal title="Job Position" open={open} footer={null} onCancel={() => close()} forceRender >
+    <Modal
+      title="Job Position"
+      open={open}
+      footer={null}
+      onCancel={() => close()}
+      forceRender
+    >
       <Form
         form={form}
         layout="vertical"
@@ -73,37 +78,37 @@ const JobOfferModal = ({ open, close, id }: ModalProps) => {
       >
         <Form.Item
           label="Title"
-          name='title'
+          name="title"
           rules={[{ required: true, message: 'Please input title!' }]}
         >
           <Input />
         </Form.Item>
 
-        <Form.Item
-          label="Subtitle"
-          name="subtitle"
-        >
+        <Form.Item label="Subtitle" name="subtitle">
           <Input />
         </Form.Item>
-        <Form.Item label="Description"
-          name="description">
+        <Form.Item label="Description" name="description">
           <ReactQuill theme="snow" />
         </Form.Item>
 
-        <Form.Item name="active" valuePropName="checked" >
+        <Form.Item name="active" valuePropName="checked">
           <Checkbox>Active</Checkbox>
         </Form.Item>
 
         <Form.Item className="flex justify-end">
-          {!id && <Button type="primary" onClick={() => handleOk()}>
-            Submit
-          </Button>}
-          {id && <Button type="primary" onClick={() => handleUpdate()}>
-            Update
-          </Button>}
+          {!id && (
+            <Button type="primary" onClick={() => handleOk()}>
+              Submit
+            </Button>
+          )}
+          {id && (
+            <Button type="primary" onClick={() => handleUpdate()}>
+              Update
+            </Button>
+          )}
         </Form.Item>
       </Form>
-      </Modal>
+    </Modal>
   );
 };
 
