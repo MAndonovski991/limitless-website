@@ -1,0 +1,354 @@
+{
+	"global": {
+		"pageTitle": "Limitless - Your platform for global scalability and success.",
+		"pageDescription": "We simplify global hiring and build dedicated teams with a genuine and value-based approach.",
+		"cookies": {
+			"title": "Cookie Consent",
+			"content": "Limitless uses cookies to improve your experience, and to analyse our traffic. We share information with our advertising and analytics partners who may combine it with other information that you've provided to them, or that they've collected from your use of their services.",
+			"buttonAgree": "Allow Cookies",
+			"buttonDisagree": "Disable Cookies"
+		}
+	},
+	"actions": {
+		"confirm": "Confirm",
+		"cancel": "Cancel"
+	},
+	"landing": {
+		"headline": "Your platform for global\nscalability and success",
+		"description": "Elevate your global success by streamlining global hiring and reducing operational costs by 50% through our value-driven approach",
+		"findAJob": "Careers",
+		"findAnEmployee": "Start Hiring Today",
+		"tagline": {
+			"title": "Local <span class=\"text-accent font-bold\">Impact</span>,</br><span class=\"text-accent font-bold\">Global</span> Outreach",
+			"description": "At Limitless Solutions, we harness the limitless potential of local talent to provide result-focused services that optimize business processes and reduce costs for our international clients. With our skilled, cost-effective and dedicated remote teams in South-East Europe, we help our clients to scale quickly and maximize their profitability."
+		},
+		"bpo": {
+			"title": "Business Process Outsourcing",
+			"description": "Efficiently outsource and excel with our customized BPO solutions for wide range of industries"
+		},
+		"eor": {
+			"title": "Employer of Record",
+			"description": "Effortlessly recruit and hire skilled talent, bypassing legal complexities"
+		},
+		"workAbroad": {
+			"title": "International Recruitment",
+			"description": "Bridging your talent gaps with high-demand workforce sourced from South-East Europe"
+		},
+		"businessConsultancy": {
+			"title": "Turnkey Solutions",
+			"description": "One-stop shop for all your business needs"
+		},
+		"takeCare": {
+			"mainTitle": "<span class=\"text-white\">Discover</span> <span class=\"text-accent\">Our Story</span>",
+			"title": "Empowering Success through\n<span class=\"text-accent\">Passion & Expertise</span>",
+			"description": "At Limitless Solutions, our dedicated team is at the heart of our success. Composed of talented individuals with international backgrounds and a deep connection to Macedonia, we bring a unique perspective to our clients."
+		},
+		"chooseExcellence": {
+			"title": "Choose <span class=\"text-accent\">Excellence</span>",
+			"items": [
+				{
+					"title": "High-speed to Hire",
+					"description": "Our robust pool of skilled professionals enables you to recruit and onboard as quickly as in two weeks",
+					"icon": "person"
+				},
+				{
+					"title": "Cost Efficiency",
+					"description": "Boost your competitive advantage and optimize cost-efficiency with our top-notch workforce from South-East Europe",
+					"icon": "insights"
+				},
+				{
+					"title": "Value-Based Partnership Model",
+					"description": "Your business is our business",
+					"icon": "partner_exchange"
+				},
+				{
+					"title": "Low Turnover Rates",
+					"description": "Ensure stable and dedicated workforce that consistently delivers outstanding results for your business",
+					"icon": "sentiment_very_satisfied"
+				},
+				{
+					"title": "International Team",
+					"description": "Our team brings powerful blend of local insights and global best business practices",
+					"icon": "diversity_3"
+				},
+				{
+					"title": "Personalized Approach",
+					"description": "Unlock innovative solutions tailored specifically to your business needs",
+					"icon": "tips_and_updates"
+				}
+			]
+		},
+		"learnMore": "Learn More",
+		"letsBuild": {
+			"title": "Let's <span class=\"text-accent\">Talk!</span>",
+			"description": "Get in touch with us today to unleash the limitless potential of your business."
+		},
+		"connectWithUs": "Contact Us"
+	},
+	"header": {
+		"solutions": "Solutions",
+		"caseStudies": "Case Studies",
+		"home": "Home",
+		"jobs": "Careers",
+		"aboutUs": "About Us",
+		"news": "News",
+		"social": "Social",
+		"impact": "Impact",
+		"contactUs": "Contact Us",
+		"bpo": "BPO",
+		"eor": "Employer of Record",
+		"workAbroad": "Work Abroad",
+		"internationalRecruitment": "International Recruitment",
+		"limitlessInternational": "International Recruitment",
+		"consultancy": "Turnkey Solutions"
+	},
+
+	"testimonials": {
+		"title": "What Our <span class=\"text-accent\">Clients</span> Are Saying"
+	},
+	"aboutUs": {
+		"headline": "About Us",
+		"description": "Your trusted and expertised partner in South-East Europe for all stages in your business operations"
+	},
+	"pages": {
+		"contact": {
+			"meta": {
+				"title": "Contact Us",
+				"description": "Let’s build your dedicated team together, seamlessly and efficiently."
+			},
+			"title": "Contact Us",
+			"description": "\n\nGet in touch with us today to unleash the limitless potential of your business."
+		},
+		"bpo": {
+			"meta": {
+				"title": "Business Process Outsourcing",
+				"description": "Accelerate your success with expert business process outsourcing solutions."
+			},
+			"title": "<span class=\"text-accent\">Accelerate</span> your <span class=\"text-accent\">success</span> with expert business process outsourcing solutions",
+			"description": "Eliminate organizational burdens with our tailored back office solutions. <br>We build high-performing, cost-effective dedicated teams customized to your industry's needs.",
+			"multiSolTitle": "<span class=\"text-accent\">Multifunctional</span> Solutions"
+		},
+		"eor": {
+			"meta": {
+				"title": "Employer of Record",
+				"description": "Access top-notch local talent without the hassle of setting up a foreign entity, ensuring workforce excellence."
+			},
+			"title": "Access <span class=\"text-accent\">top-notch</span> local talent without the hassle of setting up a foreign entity, ensuring workforce <span class=\"text-accent\">excellence</span>",
+			"description": "Offload your time-consuming and complex HR tasks, such as payroll processing, <br>benefits administration, and compliance management and focus on core business activities, saving valuable time and resources.",
+			"recruitment": "Recruitment & <span class=\"text-accent\">Employer of Record</span>",
+			"services": [
+				{
+					"title": "Recruit",
+					"description": [
+						"Sourcing and screening resumes",
+						"Tailor based head hunting for high demanding and C level positions",
+						"Job postings",
+						"Interviewing",
+						"Conducting background check ups"
+					],
+					"icon": "groups"
+				},
+				{
+					"title": "Hire",
+					"description": [
+						"Hiring international remote employees",
+						"Compliance and Legal Advisory",
+						"Consultancy on competitive employee compensations",
+						"Onboarding "
+					],
+					"icon": "partner_exchange"
+				},
+				{
+					"title": "Admin Management",
+					"description": [
+						"Payroll & Benefits Management",
+						"Track time and attendance",
+						"Record, approve and manage expenses",
+						"Compliant offboarding",
+						"Tax Compliance",
+						"Compliance and Legal Support"
+					],
+					"icon": "workspaces"
+				},
+				{
+					"title": "Retention Engagement",
+					"description": [
+						"Continuous employee empowerment",
+						"Performance metrics and analytics",
+						"Continues HR administration and compliance"
+					],
+					"icon": "diversity_3"
+				}
+			]
+		},
+		"recruitment": {
+			"meta": {
+				"title": "International Recruitment",
+				"description": "Overcome your hiring barriers for high-demand positions with our customized relocation packages"
+			},
+			"title": "<span class=\"text-accent\">Overcome</span> your hiring barriers for <span class=\"text-accent\">high-demand positions</span> with our customized relocation packages",
+			"recruitmentSupport": {
+				"title": "<span class=\"text-accent\">Recruitment &</span> Immigration Services",
+				"description": "We specialize in bridging the gap between global employers and the high-demand workforce from South-East Europe, offering comprehensive recruitment solutions and immigration support to diverse industries.<br/><br/>In collaboration with our trusted immigration partners, we provide customizable relocation packages in accordance with your specific requirements and preferences."
+			},
+			"successStories": {
+				"description": [
+					"We specialize in bridging the gap between global employers and the high-demand workforce from South-East Europe, offering comprehensive recruitment solutions and immigration support to diverse industries. ",
+					"Next to a personal and well organized recruitment process, we also offer customized relocation packages. We customize the level of our relocation services according to your needs. Schedule a free consultation call with us to find out the best model for you."
+				]
+			},
+			"trustedPartner": {
+				"title": "Your <span class=\"text-accent\">Trusted Partner</span> in Logistics",
+				"description": "Logistics is our true passion. As the sole company facilitating the relocation of logistics professionals from South-East Europe to the US our reputation speaks for itself. With a proven track record of successfully placing over 15 truck drivers and with 200 candidates in the process of obtaining a green card sponsorship. "
+			}
+		},
+		"solutions": {
+			"meta": {
+				"title": "Turnkey Solutions",
+				"description": "Your one stop shop for all your business needs in South East Europe"
+			},
+			"title": "Your <span class=\"text-accent\">one stop shop</span> \nfor all your <span class=\"text-accent\">business needs</span> in South-East Europe",
+			"businessConsulting": {
+				"title": "Business Consulting Services",
+				"description": "Overcome all your challenges and uncertainties about expanding your business in South-East Europe.\n\nOur in-house team of experts and valuable network of collaborators handle all aspects of starting and running business, from initial planning and setup to execution and ongoing management."
+			},
+			"services": [
+				{
+					"title": "Due Diligence",
+					"icon": "manage_search"
+				},
+				{
+					"title": "Business Planning",
+					"icon": "schema"
+				},
+				{
+					"title": "Legal Set-Up",
+					"icon": "description"
+				},
+				{
+					"title": "Office Selection",
+					"icon": "room_preferences"
+				},
+				{
+					"title": "Government Compliance",
+					"icon": "assured_workload"
+				},
+				{
+					"title": "Advocacy",
+					"icon": "campaign"
+				},
+				{
+					"title": "Operations Management",
+					"icon": "data_exploration"
+				},
+				{
+					"title": "Business Strategy",
+					"icon": "conversion_path"
+				},
+				{
+					"title": "Matchmaking",
+					"icon": "join_inner"
+				},
+				{
+					"title": "Marketing & Sales",
+					"icon": "monitoring"
+				}
+			],
+			"advantages": {
+				"title": "Advantages",
+				"items": [
+					{
+						"title": "Business Climate Expertise",
+						"description": "With 7+ years of hands-on experience in the Invest Macedonia government team, we have successfully facilitated and managed over 100 investment projects in the manufacturing and services sectors. We continued with our passion within the Limitless team.",
+						"icon": "workspace_premium"
+					},
+					{
+						"title": "Cost Savings",
+						"description": "By leveraging our team’s regional experience and network, you get direct access to all relevant information, save your time and feel confident that your project will be successful and compliant with the regulations.",
+						"icon": "savings"
+					},
+					{
+						"title": "Single Point of Contact",
+						"description": "Reduce complexity and enjoy the convenience of dealing with a point of contact who understands your specific needs, coordinates all aspects of the business, and ensures efficiency.",
+						"icon": "hub"
+					}
+				]
+			}
+		},
+		"aboutUs": {
+			"meta": {
+				"title": "About Us",
+				"description": "Creating prosperous career opportunities by bringing together an extraordinary and proficient team of expats and local professionals while helping global companies to thrive"
+			},
+			"title": "About Us",
+			"description_old": "Creating <span class=\"text-accent font-bold\">prosperous career opportunities</span> by bringing together an extraordinary and proficient team of expats and local professionals while <span class=\"text-accent font-bold\">helping global companies to thrive</span>",
+			"description": "<span class=\"text-accent font-bold\">Empowering Success:</span> Bridging Local Insights with Global Best Practices",
+			"ourStory": {
+				"title": "Our <span class=\"text-accent\">Story</span>",
+				"description": [
+					"Our company was established in 2019 with our headquarters in Skopje, by a woman entrepreneur who studied and worked in the US for six years. She obtained Bachelor’s and Master’s degrees in Political Science and a college basketball experience. Her drive and passion have always been to come back to her homeland and contribute towards the economic and social progress of the local community as well as to encourage young people to grow and build their future in Macedonia.",
+					"Limitless Solutions is driven by a clear purpose - to provide innovative solutions that solve our clients' most pressing needs. By leveraging our extensive network and expertise, we match businesses with top-quality talent from South-East Europe, ensuring a seamless and efficient hiring process.",
+					"Our commitment to excellence, personalized approach, and genuine care for our clients' success set us apart, making us a trusted partner in their journey towards achieving limitless possibilities."
+				]
+			},
+			"messageCeo": {
+				"title": "Message from our CEO",
+				"description": "By embracing the power of passion and love for my country, as a woman entrepreneur from Macedonia, I have witnessed how the struggles and challenges we face can be transformed into stepping stones on the path to success, guided by unwavering integrity and the collective strength of our team."
+			},
+			"coreValues": {
+				"title": "Our <span class=\"text-accent\">Core Values</span>",
+				"integrity": "Integrity",
+				"customerSuccess": "Customer Success",
+				"loyalty": "Loyalty",
+				"excellence": "Excellence",
+				"accountability": "Accountability",
+				"trustworthiness": "Trustworthiness",
+				"socialResponsibility": "Social Responsibility"
+			},
+			"executiveTeam": {
+				"title": "Leadership Team",
+				"ceo": "Founder & CEO",
+				"headOfProjects": "Head of Projects"
+			},
+			"ourHq": {
+				"title": "Europe's <span class=\"text-accent\">Hidden Gem</span>",
+				"description": [
+					"Located at the crossroads of Europe and Asia in the heart of South-East Europe, Macedonia stands as a prime business destination.",
+					"With its strategic geographical position and a diverse pool of multilingual, highly educated talent, the country offers essential value-added characteristics for scalability and success.",
+					"Macedonia’s key-distinctive strengths are:"
+				],
+				"advantages": [
+					"Lowest operating costs in Europe",
+					"Low & flat taxation",
+					"Highly educated & English-speaking talent",
+					"Member of NATO",
+					"EU candidate Country",
+					"Member of the Open Balkan Initiative"
+				]
+			}
+		},
+		"careers": {
+			"meta": {
+				"title": "Careers",
+				"description": "Expand beyond borders and find the perfect career"
+			},
+			"title": "Careers",
+			"activeJobs": "Active Job Listings",
+			"applyNow": {
+				"title": "Apply Now",
+				"description": "Apply to this position & start your new career journey!"
+			},
+			"candidateDatabase": {
+				"title": "Would you like us to contact you for open positions?",
+				"description": "We will reach out to you for new positions that fit your skills",
+				"submit": "Submit Contact Details",
+				"modalTitle": "Candidate Database"
+			}
+		}
+	},
+	"contactSection": {
+		"title": "Let's Talk",
+		"description": "Schedule a free consultation call with us to find out the best model for you. "
+	}
+}
+

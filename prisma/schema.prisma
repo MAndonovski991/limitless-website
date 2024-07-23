@@ -1,0 +1,84 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model JobOffer {
+  id            String    @id @default(cuid())
+  title         String?
+  subtitle      String?
+  description   String?
+  dateCreated   DateTime @default(now())
+  active        Boolean @default(false)
+  deleted       Boolean @default(false)
+  jobApplications JobApplication[]
+}
+
+model JobApplication {
+  id            String    @id @default(cuid())
+  candidateId   String
+  jobOfferId    String
+  createdAt     DateTime    
+  candidate     Candidate    @relation(fields: [candidateId], references: [id], onDelete: Cascade)
+  jobOffer      JobOffer    @relation(fields: [jobOfferId], references: [id], onDelete: Cascade)
+}
+
+model Account {
+  id                 String  @id @default(cuid())
+  userId             String
+  type               String
+  provider           String
+  providerAccountId  String
+  refresh_token      String?
+  access_token       String?
+  expires_at         Int?
+  token_type         String?
+  scope              String?
+  id_token           String?
+  session_state      String?
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([provider, providerAccountId])
+}
+
+model Session {
+  id           String   @id @default(cuid())
+  sessionToken String   @unique
+  userId       String
+  expires      DateTime
+  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model User {
+  id            String    @id @default(cuid())
+  name          String?
+  email         String?   @unique
+  active        Boolean?
+  emailVerified DateTime?
+  accounts      Account[]
+  sessions      Session[]
+}
+
+model VerificationToken {
+  identifier String
+  token      String   @unique
+  expires    DateTime
+
+  @@unique([identifier, token])
+}
+
+model Candidate {
+  id            String    @id @default(cuid())
+  fullname      String?
+  email         String?    
+  phone         String?
+  jobs          JobApplication[]
+}

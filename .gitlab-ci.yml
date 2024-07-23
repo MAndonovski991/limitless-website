@@ -1,0 +1,27 @@
+image: node:16
+
+stages:
+- setup
+- lint
+
+workflow:
+  rules:
+    - if: $CI_COMMIT_BRANCH == "develop" || $CI_COMMIT_BRANCH == "testing" || $CI_COMMIT_BRANCH == "main"
+
+install_packages:
+  stage: setup
+  script:
+    - npm install
+  artifacts:
+    paths:
+      - node_modules
+
+lint:commit:
+  stage: lint
+  script:
+    - echo "${CI_COMMIT_MESSAGE}" | npx commitlint
+
+lint:code:
+  stage: lint
+  script:
+    - npm run lint
