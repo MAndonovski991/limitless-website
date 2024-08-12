@@ -27,7 +27,7 @@ export const authOptions: NextAuthOptions = {
         port: process.env.NODEMAILER_PORT,
         auth: {
           user: process.env.EMAIL_AUTH_FROM,
-          pass: 'iz?nAIR_T_eh',
+          pass: process.env.EMAIL_AUTH_FROM_PW,
         },
       },
       from: process.env.EMAIL_AUTH_FROM,
