@@ -258,7 +258,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                         rel="noreferrer"
                       >
                         <p className="-mt-1 text-xs">
-                          Mitropolit Teodosij Gologanov 6/1-14
+                          Dimitrie Chupovski 5-1
                           <br />
                           1000 Skopje
                           <br />

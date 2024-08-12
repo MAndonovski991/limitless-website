@@ -53,7 +53,7 @@ const LetsTalkSection = ({ locale }: { locale: string }) => {
                 rel="noreferrer"
               >
                 <p className="-mt-1">
-                  Mitropolit Teodosij Gologanov 6/1-14
+                  Dimitrie Chupovski 5-1
                   <br />
                   1000 Skopje
                   <br />
