@@ -43,8 +43,8 @@ const Layout = async ({
   const headersList = headers();
   const path = headersList.get('x-invoke-path')?.split('/');
 
-  const showHeader = path && path[2] !== 'admin';
-  const showFooter = path && path[2] !== 'admin';
+  const showHeader = true//path && path[2] !== 'admin';
+  const showFooter = true//path && path[2] !== 'admin';
 
   return (
     <html lang={params.locale}>
