@@ -7,6 +7,7 @@ import 'react-material-symbols/dist/rounded.css';
 
 import Link from 'next/link';
 import Image from 'next/image';
+import {useRouter} from 'next/router'
 
 import { MaterialSymbol } from 'react-material-symbols';
 import logoWhite from '../../assets/images/logo-side-white.png';
@@ -41,10 +42,13 @@ const Layout = async ({
 }) => {
   const t = useTranslation(params.locale);
   const headersList = headers();
-  const path = headersList.get('x-invoke-path')?.split('/');
+  const router = useRouter();
 
-  const showHeader = true//path && path[2] !== 'admin';
-  const showFooter = true//path && path[2] !== 'admin';
+  // Get the path segments from the router's pathname
+  const path = router.pathname.split('/');
+
+  const showHeader = path && path[1] !== 'admin';
+  const showFooter = path && path[1] !== 'admin';
 
   return (
     <html lang={params.locale}>
