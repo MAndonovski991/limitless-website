@@ -41,7 +41,7 @@ const Layout = async ({
 }) => {
   const t = useTranslation(params.locale);
   const headersList = headers();
-  const path = headersList.get('x-invoke-path')?.split('/');
+  const path = window.location.pathname.split('/');
 
   const showHeader = path && path[2] !== 'admin';
   const showFooter = path && path[2] !== 'admin';
