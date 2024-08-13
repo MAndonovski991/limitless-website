@@ -42,7 +42,7 @@ const Layout = async ({
   const t = useTranslation(params.locale);
   // Retrieve the path from the headers
   const headersList = headers();
-  const fullPath = headersList.get('x-invoke-path') || '';
+  const fullPath = headersList.get('x-matched-path') || '';
 
   // Split the path and check for 'admin'
   const pathSegments = fullPath.split('/');
