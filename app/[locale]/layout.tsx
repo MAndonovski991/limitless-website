@@ -42,9 +42,10 @@ const Layout = async ({
   const t = useTranslation(params.locale);
   const headersList = headers();
   const path = window.location.pathname.split('/');
+  const isAdminPath = path.length > 2 && path[2] === 'admin';
 
-  const showHeader = path && path[2] !== 'admin';
-  const showFooter = path && path[2] !== 'admin';
+  const showHeader = !isAdminPath;
+  const showFooter = !isAdminPath;
 
   return (
     <html lang={params.locale}>
