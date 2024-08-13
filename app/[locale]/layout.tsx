@@ -40,9 +40,9 @@ const Layout = async ({
   params: { locale: string };
 }) => {
   const t = useTranslation(params.locale);
-  // You can get the full path from params or headers
+  // Retrieve the path from the headers
   const headersList = headers();
-  const fullPath = headersList.get('x-invoke-path') || params.path || '';
+  const fullPath = headersList.get('x-invoke-path') || '';
 
   // Split the path and check for 'admin'
   const pathSegments = fullPath.split('/');
