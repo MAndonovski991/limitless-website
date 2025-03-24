@@ -6,13 +6,13 @@ export async function sendMail(subject: string, toEmail: string, otpText: string
     port: process.env.NODEMAILER_PORT,
     secure: true, // true for 465, false for other ports
     auth: {
-      user: process.env.NODEMAILER_EMAIL,
-      pass: process.env.NODEMAILER_PW
+      user: process.env.EMAIL_AUTH_FROM,
+      pass: process.env.EMAIL_AUTH_FROM_PW
     }
   })
 
   const mailOptions = {
-    from: process.env.NODEMAILER_EMAIL,
+    from: process.env.EMAIL_AUTH_FROM,
     to: toEmail,
     subject: subject,
     text: otpText,
